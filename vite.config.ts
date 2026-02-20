@@ -1,9 +1,11 @@
+/// <reference types="node" />
 import { defineConfig } from 'vite'
 import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+    base: '/handyman/', // Set the base path for the application to ensure correct asset loading when deployed to GitHub Pages
   plugins: [
     // The React and Tailwind plugins are both required for Make, even if
     // Tailwind is not being actively used – do not remove them
