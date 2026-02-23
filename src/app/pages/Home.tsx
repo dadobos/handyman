@@ -177,7 +177,7 @@ export function Home() {
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-sky-600 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="text-gray-900">
+                    <span className="text-gray-900 dark:text-white">
                       {t("home.about.points.experienced.title")}
                     </span>
                     <p className="text-gray-600 dark:text-gray-300">
@@ -188,7 +188,7 @@ export function Home() {
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-sky-600 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="text-gray-900">
+                    <span className="text-gray-900 dark:text-white">
                       {t("home.about.points.pricing.title")}
                     </span>
                     <p className="text-gray-600 dark:text-gray-300">
@@ -199,7 +199,7 @@ export function Home() {
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-sky-600 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="text-gray-900">
+                    <span className="text-gray-900 dark:text-white">
                       {t("home.about.points.guarantee.title")}
                     </span>
                     <p className="text-gray-600 dark:text-gray-300">

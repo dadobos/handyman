@@ -84,13 +84,13 @@ export function About() {
               <h2 className="text-3xl md:text-4xl mb-6 text-gray-900 dark:text-white">
                 {t("about.story.title")}
               </h2>
-              <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
+              <p className="text-lg text-gray-700 mb-4 dark:text-white">
                 {t("about.story.p1")}
               </p>
-              <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
+              <p className="text-lg text-gray-700 mb-4 dark:text-white">
                 {t("about.story.p2")}
               </p>
-              <p className="text-lg text-gray-700 dark:text-gray-300">
+              <p className="text-lg text-gray-700 dark:text-white">
                 {t("about.story.p3")}
               </p>
             </div>
