@@ -66,21 +66,19 @@ export function Gallery() {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <div>
+    <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-orange-50 to-orange-100 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl mb-6 text-gray-900">
-            {t("gallery.hero.title")}
-          </h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            {t("gallery.hero.subtitle")}
-          </p>
-        </div>
+      <section className="bg-gradient-to-br from-sky-50 to-sky-100 py-16 dark:from-gray-900 dark:to-gray-800">
+        <h1 className="text-4xl md:text-5xl mb-6 text-gray-900 dark:text-white text-center">
+          {t("gallery.hero.title")}
+        </h1>
+        <p className="text-xl text-gray-700 max-w-3xl mx-auto dark:text-gray-300">
+          {t("gallery.hero.subtitle")}
+        </p>
       </section>
 
       {/* Filter Section */}
-      <section className="py-8 bg-white border-b border-gray-200">
+      <section className="py-8 bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap gap-3 justify-center">
             {categories.map((category) => (
@@ -89,8 +87,8 @@ export function Gallery() {
                 onClick={() => setSelectedCategory(category.key)}
                 className={`px-6 py-2 rounded-full transition-colors ${
                   selectedCategory === category.key
-                    ? "bg-orange-600 text-white"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                    ? "bg-sky-600 text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700"
                 }`}
               >
                 {category.label}
@@ -101,13 +99,13 @@ export function Gallery() {
       </section>
 
       {/* Gallery Grid */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow cursor-pointer"
+                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow cursor-pointer dark:shadow-black/40"
               >
                 <ImageWithFallback
                   src={project.image}
@@ -116,7 +114,7 @@ export function Gallery() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <div className="inline-block bg-orange-600 px-3 py-1 rounded-full text-sm mb-2">
+                    <div className="inline-block bg-sky-600 px-3 py-1 rounded-full text-sm mb-2">
                       {
                         categories.find((c) => c.key === project.category)
                           ?.label
@@ -132,7 +130,7 @@ export function Gallery() {
 
           {filteredProjects.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-gray-600 dark:text-gray-300">
                 {t("gallery.empty")}
               </p>
             </div>

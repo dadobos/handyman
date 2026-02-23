@@ -55,30 +55,30 @@ export function Home() {
   ];
 
   return (
-    <div>
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-50 to-orange-100 overflow-hidden">
+    <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+      {/* Hero */}
+      <section className="relative bg-gradient-to-br from-sky-50 to-sky-100 overflow-hidden dark:from-gray-900 dark:to-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-900">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-900 dark:text-white">
                 {t("home.hero.title")}
-                <span className="text-orange-600"> {t("home.hero.titleHighlight")}</span>
+                <span className="text-sky-600"> {t("home.hero.titleHighlight")}</span>
               </h1>
-              <p className="text-xl text-gray-700 mb-8">
+              <p className="text-xl text-gray-700 mb-8 dark:text-gray-300">
                 {t("home.hero.subtitle")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center bg-orange-600 text-white px-8 py-4 rounded-lg hover:bg-orange-700 transition-colors"
+                  className="inline-flex items-center justify-center bg-sky-600 text-white px-8 py-4 rounded-lg hover:bg-sky-700 transition-colors"
                 >
                   {t("home.hero.ctaPrimary")}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
                 <a
                   href="tel:5551234567"
-                  className="inline-flex items-center justify-center bg-white text-orange-600 px-8 py-4 rounded-lg border-2 border-orange-600 hover:bg-orange-50 transition-colors"
+                  className="inline-flex items-center justify-center bg-white text-sky-600 px-8 py-4 rounded-lg border-2 border-sky-600 hover:bg-sky-50 transition-colors dark:bg-gray-900 dark:text-sky-400 dark:border-sky-500 dark:hover:bg-gray-800"
                 >
                   <Phone className="mr-2 h-5 w-5" />
                   {t("home.hero.ctaSecondary")}
@@ -96,14 +96,13 @@ export function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {features.map((feature, index) => (
               <div key={index} className="flex items-center space-x-3">
-                <CheckCircle className="h-6 w-6 text-orange-600 flex-shrink-0" />
-                <span className="text-gray-700">{feature}</span>
+                <CheckCircle className="h-6 w-6 text-sky-600 flex-shrink-0" />
+                <span className="text-gray-700 dark:text-gray-300">{feature}</span>
               </div>
             ))}
           </div>
@@ -111,13 +110,13 @@ export function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900">
+            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900 dark:text-white">
               {t("home.services.title")}
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto dark:text-gray-300">
               {t("home.services.subtitle")}
             </p>
           </div>
@@ -125,7 +124,7 @@ export function Home() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow dark:bg-gray-900 dark:border dark:border-gray-800"
               >
                 <ImageWithFallback
                   src={service.image}
@@ -134,10 +133,10 @@ export function Home() {
                 />
                 <div className="p-6">
                   <h3 className="text-xl mb-2 text-gray-900">{service.title}</h3>
-                  <p className="text-gray-600 mb-4">{service.description}</p>
+                  <p className="text-gray-600 mb-4 dark:text-gray-300">{service.description}</p>
                   <Link
                     to="/services"
-                    className="inline-flex items-center text-orange-600 hover:text-orange-700"
+                    className="inline-flex items-center text-sky-600 hover:text-sky-700"
                   >
                     {t("home.services.learnMore")}
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -149,7 +148,7 @@ export function Home() {
           <div className="text-center mt-12">
             <Link
               to="/services"
-              className="inline-flex items-center bg-orange-600 text-white px-8 py-3 rounded-lg hover:bg-orange-700 transition-colors"
+              className="inline-flex items-center bg-sky-600 text-white px-8 py-3 rounded-lg hover:bg-sky-700 transition-colors"
             >
               {t("home.services.viewAll")}
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -159,7 +158,7 @@ export function Home() {
       </section>
 
       {/* About Preview Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <ImageWithFallback
@@ -168,42 +167,42 @@ export function Home() {
               className="rounded-lg shadow-lg w-full"
             />
             <div>
-              <h2 className="text-3xl md:text-4xl mb-6 text-gray-900">
+              <h2 className="text-3xl md:text-4xl mb-6 text-gray-900 dark:text-white">
                 {t("home.about.title")}
               </h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-600 mb-6 dark:text-gray-300">
                 {t("home.about.subtitle")}
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="h-6 w-6 text-sky-600 flex-shrink-0 mt-0.5" />
                   <div>
                     <span className="text-gray-900">
                       {t("home.about.points.experienced.title")}
                     </span>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 dark:text-gray-300">
                       {t("home.about.points.experienced.text")}
                     </p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="h-6 w-6 text-sky-600 flex-shrink-0 mt-0.5" />
                   <div>
                     <span className="text-gray-900">
                       {t("home.about.points.pricing.title")}
                     </span>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 dark:text-gray-300">
                       {t("home.about.points.pricing.text")}
                     </p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="h-6 w-6 text-sky-600 flex-shrink-0 mt-0.5" />
                   <div>
                     <span className="text-gray-900">
                       {t("home.about.points.guarantee.title")}
                     </span>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 dark:text-gray-300">
                       {t("home.about.points.guarantee.text")}
                     </p>
                   </div>
@@ -211,7 +210,7 @@ export function Home() {
               </ul>
               <Link
                 to="/about"
-                className="inline-flex items-center text-orange-600 hover:text-orange-700 text-lg"
+                className="inline-flex items-center text-sky-600 hover:text-sky-700 text-lg"
               >
                 {t("home.about.learnMore")}
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -222,25 +221,25 @@ export function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900">
+            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900 dark:text-white">
               {t("home.testimonials.title")}
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-600 dark:text-gray-300">
               {t("home.testimonials.subtitle")}
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-lg">
+              <div key={index} className="bg-white rounded-lg p-6 shadow-lg dark:bg-gray-900 dark:border dark:border-gray-800">
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
-                <p className="text-gray-700 mb-4">"{testimonial.text}"</p>
+                <p className="text-gray-700 mb-4 dark:text-gray-300">"{testimonial.text}"</p>
                 <p className="text-gray-900">- {testimonial.name}</p>
               </div>
             ))}
@@ -249,25 +248,25 @@ export function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-orange-600">
+      <section className="py-16 bg-sky-600 dark:bg-sky-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl mb-6 text-white">
             {t("home.cta.title")}
           </h2>
-          <p className="text-xl text-orange-100 mb-8">
+          <p className="text-xl text-sky-100 mb-8 dark:text-sky-100/90">
             {t("home.cta.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center bg-white text-orange-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center justify-center bg-white text-sky-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors"
             >
               {t("home.cta.primary")}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <a
               href="tel:5551234567"
-              className="inline-flex items-center justify-center bg-orange-700 text-white px-8 py-4 rounded-lg hover:bg-orange-800 transition-colors"
+              className="inline-flex items-center justify-center bg-sky-700 text-white px-8 py-4 rounded-lg hover:bg-sky-800 transition-colors dark:bg-sky-800 dark:hover:bg-sky-900"
             >
               <Phone className="mr-2 h-5 w-5" />
               {t("home.cta.secondary")}

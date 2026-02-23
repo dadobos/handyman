@@ -120,21 +120,19 @@ export function Services() {
   ];
 
   return (
-    <div>
+    <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-orange-50 to-orange-100 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl mb-6 text-gray-900">
-            {t("services.hero.title")}
-          </h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            {t("services.hero.subtitle")}
-          </p>
-        </div>
+      <section className="bg-gradient-to-br from-sky-50 to-sky-100 py-16 dark:from-gray-900 dark:to-gray-800">
+        <h1 className="text-4xl md:text-5xl mb-6 text-gray-900 dark:text-white text-center">
+          {t("services.hero.title")}
+        </h1>
+        <p className="text-xl text-gray-700 max-w-3xl mx-auto dark:text-gray-300">
+          {t("services.hero.subtitle")}
+        </p>
       </section>
 
       {/* Services Grid */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => {
@@ -142,18 +140,22 @@ export function Services() {
               return (
                 <div
                   key={index}
-                  className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-xl transition-shadow"
+                  className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-xl transition-shadow dark:bg-gray-900 dark:border-gray-800"
                 >
-                  <div className="bg-orange-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
-                    <Icon className="h-7 w-7 text-orange-600" />
+                  <div className="bg-sky-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                    <Icon className="h-7 w-7 text-sky-600" />
                   </div>
                   <h3 className="text-xl mb-3 text-gray-900">{service.title}</h3>
-                  <p className="text-gray-600 mb-4">{service.description}</p>
+                  <p className="text-gray-600 mb-4 dark:text-gray-300">
+                    {service.description}
+                  </p>
                   <ul className="space-y-2">
                     {service.items.map((item, itemIndex) => (
                       <li key={itemIndex} className="flex items-start space-x-2">
-                        <CheckCircle className="h-5 w-5 text-orange-600 flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-700">{item}</span>
+                        <CheckCircle className="h-5 w-5 text-sky-600 flex-shrink-0 mt-0.5" />
+                        <span className="text-gray-700 dark:text-gray-300">
+                          {item}
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -165,24 +167,28 @@ export function Services() {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900">
+            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900 dark:text-white">
               {t("services.process.title")}
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-600 dark:text-gray-300">
               {t("services.process.subtitle")}
             </p>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             {process.map((step, index) => (
               <div key={index} className="text-center">
-                <div className="bg-orange-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                <div className="bg-sky-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
                   {step.step}
                 </div>
-                <h3 className="text-xl mb-2 text-gray-900">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
+                <h3 className="text-xl mb-2 text-gray-900 dark:text-white">
+                  {step.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300">
+                  {step.description}
+                </p>
               </div>
             ))}
           </div>
@@ -190,17 +196,17 @@ export function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-orange-600">
+      <section className="py-16 bg-sky-600 dark:bg-sky-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl mb-6 text-white">
             {t("services.cta.title")}
           </h2>
-          <p className="text-xl text-orange-100 mb-8">
+          <p className="text-xl text-sky-100 mb-8 dark:text-sky-100/90">
             {t("services.cta.subtitle")}
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center bg-white text-orange-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors"
+            className="inline-flex items-center bg-white text-sky-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors"
           >
             {t("services.cta.button")}
             <ArrowRight className="ml-2 h-5 w-5" />

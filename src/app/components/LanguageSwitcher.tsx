@@ -38,7 +38,7 @@ export function LanguageSwitcher() {
       type="button"
       onClick={() => setLang(other as "en" | "nl")}
       aria-label={t("header.language")}
-      className="flex items-center gap-1 bg-white px-2 py-1 text-sm hover:bg-gray-50"
+      className="flex items-center gap-1 px-2 py-1 text-sm hover:bg-gray-50"
     >
       {other === "en" ? <FlagGB /> : <FlagNL />}
     </button>

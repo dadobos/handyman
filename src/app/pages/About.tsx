@@ -63,34 +63,34 @@ export function About() {
   ];
 
   return (
-    <div>
+    <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-orange-50 to-orange-100 py-16">
+      <section className="bg-gradient-to-br from-sky-50 to-sky-100 py-16 dark:from-gray-900 dark:to-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl mb-6 text-gray-900">
+          <h1 className="text-4xl md:text-5xl mb-6 text-gray-900 dark:text-white text-center">
             {t("about.hero.title")}
           </h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto dark:text-gray-300">
             {t("about.hero.subtitle")}
           </p>
         </div>
       </section>
 
       {/* Story Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl mb-6 text-gray-900">
+              <h2 className="text-3xl md:text-4xl mb-6 text-gray-900 dark:text-white">
                 {t("about.story.title")}
               </h2>
-              <p className="text-lg text-gray-700 mb-4">
+              <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
                 {t("about.story.p1")}
               </p>
-              <p className="text-lg text-gray-700 mb-4">
+              <p className="text-lg text-gray-700 mb-4 dark:text-gray-300">
                 {t("about.story.p2")}
               </p>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-gray-700 dark:text-gray-300">
                 {t("about.story.p3")}
               </p>
             </div>
@@ -104,7 +104,7 @@ export function About() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-orange-600">
+      <section className="py-16 bg-sky-600 dark:bg-sky-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -112,7 +112,7 @@ export function About() {
                 <div className="text-4xl md:text-5xl text-white mb-2">
                   {stat.value}
                 </div>
-                <div className="text-orange-100">{stat.label}</div>
+                <div className="text-sky-100">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -120,13 +120,13 @@ export function About() {
       </section>
 
       {/* Values Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900">
+            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900 dark:text-white">
               {t("about.values.title")}
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto dark:text-gray-300">
               {t("about.values.subtitle")}
             </p>
           </div>
@@ -134,12 +134,12 @@ export function About() {
             {values.map((value, index) => {
               const Icon = value.icon;
               return (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-lg text-center">
-                  <div className="bg-orange-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Icon className="h-7 w-7 text-orange-600" />
+                <div key={index} className="bg-white rounded-lg p-6 shadow-lg text-center dark:bg-gray-900 dark:border dark:border-gray-800">
+                  <div className="bg-sky-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Icon className="h-7 w-7 text-sky-600" />
                   </div>
                   <h3 className="text-xl mb-3 text-gray-900">{value.title}</h3>
-                  <p className="text-gray-600">{value.description}</p>
+                  <p className="text-gray-600 dark:text-gray-300">{value.description}</p>
                 </div>
               );
             })}
@@ -148,25 +148,25 @@ export function About() {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900">
+            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900 dark:text-white">
               {t("about.team.title")}
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto dark:text-gray-300">
               {t("about.team.subtitle")}
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {team.map((member, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6 text-center">
-                <div className="bg-orange-100 w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Users className="h-12 w-12 text-orange-600" />
+              <div key={index} className="bg-gray-50 rounded-lg p-6 text-center dark:bg-gray-800">
+                <div className="bg-sky-100 w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <Users className="h-12 w-12 text-sky-600" />
                 </div>
                 <h3 className="text-xl mb-1 text-gray-900">{member.name}</h3>
-                <p className="text-orange-600 mb-3">{member.role}</p>
-                <p className="text-gray-600">{member.description}</p>
+                <p className="text-sky-600 mb-3">{member.role}</p>
+                <p className="text-gray-600 dark:text-gray-300">{member.description}</p>
               </div>
             ))}
           </div>
@@ -174,21 +174,21 @@ export function About() {
       </section>
 
       {/* Certifications Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900">
+            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900 dark:text-white">
               {t("about.certifications.title")}
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto dark:text-gray-300">
               {t("about.certifications.subtitle")}
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {certifications.map((cert, index) => (
-              <div key={index} className="flex items-center space-x-3 bg-white p-4 rounded-lg">
-                <CheckCircle className="h-6 w-6 text-orange-600 flex-shrink-0" />
-                <span className="text-gray-700">{cert}</span>
+              <div key={index} className="flex items-center space-x-3 bg-white p-4 rounded-lg dark:bg-gray-900 dark:border dark:border-gray-800">
+                <CheckCircle className="h-6 w-6 text-sky-600 flex-shrink-0" />
+                <span className="text-gray-700 dark:text-gray-300">{cert}</span>
               </div>
             ))}
           </div>
