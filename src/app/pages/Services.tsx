@@ -1,95 +1,121 @@
 import { Link } from "react-router";
-import { 
-  Wrench, 
-  Droplet, 
-  Zap, 
-  PaintBucket, 
-  Hammer, 
-  Home, 
-  Settings, 
+import {
+  Wrench,
+  Droplet,
+  Zap,
+  PaintBucket,
+  Hammer,
+  Home,
+  Settings,
   CheckCircle,
-  ArrowRight 
+  ArrowRight,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function Services() {
+  const { t } = useTranslation();
+
   const services = [
     {
       icon: Droplet,
-      title: "Plumbing Services",
-      description: "Expert plumbing repairs and installations for your home.",
+      title: t("services.list.plumbing.title"),
+      description: t("services.list.plumbing.description"),
       items: [
-        "Faucet & Fixture Repairs",
-        "Toilet Repairs & Replacement",
-        "Pipe Repairs & Leak Detection",
-        "Drain Cleaning",
-        "Water Heater Services",
-        "Garbage Disposal Installation",
+        t("services.list.plumbing.items.0"),
+        t("services.list.plumbing.items.1"),
+        t("services.list.plumbing.items.2"),
+        t("services.list.plumbing.items.3"),
+        t("services.list.plumbing.items.4"),
+        t("services.list.plumbing.items.5"),
       ],
     },
     {
       icon: Zap,
-      title: "Electrical Work",
-      description: "Safe and reliable electrical services by licensed professionals.",
+      title: t("services.list.electrical.title"),
+      description: t("services.list.electrical.description"),
       items: [
-        "Light Fixture Installation",
-        "Outlet & Switch Repair",
-        "Ceiling Fan Installation",
-        "Circuit Breaker Services",
-        "Home Rewiring",
-        "Electrical Safety Inspections",
+        t("services.list.electrical.items.0"),
+        t("services.list.electrical.items.1"),
+        t("services.list.electrical.items.2"),
+        t("services.list.electrical.items.3"),
+        t("services.list.electrical.items.4"),
+        t("services.list.electrical.items.5"),
       ],
     },
     {
       icon: PaintBucket,
-      title: "Painting & Drywall",
-      description: "Transform your space with professional painting services.",
+      title: t("services.list.painting.title"),
+      description: t("services.list.painting.description"),
       items: [
-        "Interior Painting",
-        "Exterior Painting",
-        "Drywall Installation",
-        "Drywall Repair",
-        "Texture Matching",
-        "Wallpaper Removal",
+        t("services.list.painting.items.0"),
+        t("services.list.painting.items.1"),
+        t("services.list.painting.items.2"),
+        t("services.list.painting.items.3"),
+        t("services.list.painting.items.4"),
+        t("services.list.painting.items.5"),
       ],
     },
     {
       icon: Hammer,
-      title: "Carpentry",
-      description: "Custom carpentry work for all your woodworking needs.",
+      title: t("services.list.carpentry.title"),
+      description: t("services.list.carpentry.description"),
       items: [
-        "Custom Shelving",
-        "Cabinet Installation",
-        "Door Installation & Repair",
-        "Crown Molding",
-        "Deck Repairs",
-        "Trim & Baseboards",
+        t("services.list.carpentry.items.0"),
+        t("services.list.carpentry.items.1"),
+        t("services.list.carpentry.items.2"),
+        t("services.list.carpentry.items.3"),
+        t("services.list.carpentry.items.4"),
+        t("services.list.carpentry.items.5"),
       ],
     },
     {
       icon: Home,
-      title: "Home Repairs",
-      description: "General home repairs to keep your property in top shape.",
+      title: t("services.list.repairs.title"),
+      description: t("services.list.repairs.description"),
       items: [
-        "Window Repairs",
-        "Door Repairs",
-        "Lock Installation",
-        "Weather Stripping",
-        "Caulking & Sealing",
-        "Minor Roof Repairs",
+        t("services.list.repairs.items.0"),
+        t("services.list.repairs.items.1"),
+        t("services.list.repairs.items.2"),
+        t("services.list.repairs.items.3"),
+        t("services.list.repairs.items.4"),
+        t("services.list.repairs.items.5"),
       ],
     },
     {
       icon: Settings,
-      title: "Maintenance Services",
-      description: "Regular maintenance to prevent future problems.",
+      title: t("services.list.maintenance.title"),
+      description: t("services.list.maintenance.description"),
       items: [
-        "Seasonal Home Inspections",
-        "Gutter Cleaning",
-        "Pressure Washing",
-        "HVAC Filter Changes",
-        "Preventive Maintenance",
-        "Home Safety Checks",
+        t("services.list.maintenance.items.0"),
+        t("services.list.maintenance.items.1"),
+        t("services.list.maintenance.items.2"),
+        t("services.list.maintenance.items.3"),
+        t("services.list.maintenance.items.4"),
+        t("services.list.maintenance.items.5"),
       ],
+    },
+  ];
+
+  const process = [
+    {
+      step: "1",
+      title: t("services.process.items.0.title"),
+      description: t("services.process.items.0.description"),
+    },
+    {
+      step: "2",
+      title: t("services.process.items.1.title"),
+      description: t("services.process.items.1.description"),
+    },
+    {
+      step: "3",
+      title: t("services.process.items.2.title"),
+      description: t("services.process.items.2.description"),
+    },
+    {
+      step: "4",
+      title: t("services.process.items.3.title"),
+      description: t("services.process.items.3.description"),
     },
   ];
 
@@ -98,9 +124,11 @@ export function Services() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-orange-50 to-orange-100 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl mb-6 text-gray-900">Our Services</h1>
+          <h1 className="text-4xl md:text-5xl mb-6 text-gray-900">
+            {t("services.hero.title")}
+          </h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            From minor repairs to major renovations, we offer comprehensive handyman services to meet all your home improvement needs.
+            {t("services.hero.subtitle")}
           </p>
         </div>
       </section>
@@ -140,40 +168,21 @@ export function Services() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900">How It Works</h2>
+            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900">
+              {t("services.process.title")}
+            </h2>
             <p className="text-xl text-gray-600">
-              Getting your home repairs done is easy with our simple process
+              {t("services.process.subtitle")}
             </p>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
-            {[
-              {
-                step: "1",
-                title: "Contact Us",
-                description: "Call or fill out our online form to describe your project",
-              },
-              {
-                step: "2",
-                title: "Get a Quote",
-                description: "Receive a fair, transparent estimate for the work",
-              },
-              {
-                step: "3",
-                title: "Schedule Service",
-                description: "Choose a convenient time that works for you",
-              },
-              {
-                step: "4",
-                title: "Job Complete",
-                description: "We complete the work with quality and care",
-              },
-            ].map((process, index) => (
+            {process.map((step, index) => (
               <div key={index} className="text-center">
                 <div className="bg-orange-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
-                  {process.step}
+                  {step.step}
                 </div>
-                <h3 className="text-xl mb-2 text-gray-900">{process.title}</h3>
-                <p className="text-gray-600">{process.description}</p>
+                <h3 className="text-xl mb-2 text-gray-900">{step.title}</h3>
+                <p className="text-gray-600">{step.description}</p>
               </div>
             ))}
           </div>
@@ -184,16 +193,16 @@ export function Services() {
       <section className="py-16 bg-orange-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl mb-6 text-white">
-            Need a Handyman?
+            {t("services.cta.title")}
           </h2>
           <p className="text-xl text-orange-100 mb-8">
-            Contact us today for a free estimate on any of our services!
+            {t("services.cta.subtitle")}
           </p>
           <Link
             to="/contact"
             className="inline-flex items-center bg-white text-orange-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors"
           >
-            Request a Quote
+            {t("services.cta.button")}
             <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
         </div>

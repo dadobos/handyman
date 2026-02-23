@@ -1,17 +1,20 @@
 import { Link, useLocation } from "react-router";
 import { Menu, X, Wrench } from "lucide-react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
 
   const navItems = [
-    { name: "Home", path: "/" },
-    { name: "Services", path: "/services" },
-    { name: "About", path: "/about" },
-    { name: "Gallery", path: "/gallery" },
-    { name: "Contact", path: "/contact" },
+    { name: t("header.nav.home"), path: "/" },
+    { name: t("header.nav.services"), path: "/services" },
+    { name: t("header.nav.about"), path: "/about" },
+    { name: t("header.nav.gallery"), path: "/gallery" },
+    { name: t("header.nav.contact"), path: "/contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -23,11 +26,13 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <Wrench className="h-8 w-8 text-orange-600" />
-            <span className="font-bold text-xl text-gray-900">Lucris Handyman</span>
+            <span className="font-bold text-xl text-gray-900">
+              {t("header.brand")}
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -41,6 +46,7 @@ export function Header() {
                 {item.name}
               </Link>
             ))}
+            <LanguageSwitcher />
           </nav>
 
           {/* CTA Button */}
@@ -48,7 +54,7 @@ export function Header() {
             to="/contact"
             className="hidden md:block bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700 transition-colors"
           >
-            Get a Quote
+            {t("header.cta")}
           </Link>
 
           {/* Mobile Menu Button */}
@@ -81,12 +87,15 @@ export function Header() {
                 {item.name}
               </Link>
             ))}
+            <div className="mt-4">
+              <LanguageSwitcher />
+            </div>
             <Link
               to="/contact"
               onClick={() => setMobileMenuOpen(false)}
               className="block mt-4 bg-orange-600 text-white px-6 py-2 rounded-md text-center hover:bg-orange-700 transition-colors"
             >
-              Get a Quote
+              {t("header.cta")}
             </Link>
           </nav>
         )}

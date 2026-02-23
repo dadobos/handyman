@@ -1,0 +1,399 @@
+{
+  "header": {
+    "brand": "Lucris Handyman",
+    "nav": {
+      "home": "Home",
+      "services": "Diensten",
+      "about": "Over ons",
+      "gallery": "Galerij",
+      "contact": "Contact"
+    },
+    "cta": "Offerte aanvragen",
+    "language": "Taal"
+  },
+  "footer": {
+    "brand": "Lucris Handyman",
+    "description": "Professionele klusdiensten voor al uw reparatie- en onderhoudsbehoeften. Kwaliteit, betaalbare prijzen.",
+    "quickLinks": "Snelle links",
+    "links": {
+      "home": "Home",
+      "services": "Diensten",
+      "about": "Over ons",
+      "gallery": "Galerij",
+      "contact": "Contact"
+    },
+    "ourServices": "Onze diensten",
+    "services": {
+      "plumbing": "Loodgieterswerk",
+      "electrical": "Elektrisch werk",
+      "painting": "Schilder- & stucwerk",
+      "carpentry": "Timmerwerk",
+      "general": "Algemene reparaties",
+      "maintenance": "Woningonderhoud"
+    },
+    "contactInfo": "Contactgegevens",
+    "callUs": "Bel ons",
+    "emailUs": "E-mail",
+    "location": "Locatie",
+    "hours": "Openingstijden",
+    "hoursValue": "Ma-Za: 08:00-18:00",
+    "copyright": "© 2026 Lucris Handyman. Alle rechten voorbehouden."
+  },
+  "about": {
+    "hero": {
+      "title": "Over Lucris Handyman",
+      "subtitle": "Uw vertrouwde partner voor al uw woningreparaties en onderhoud sinds 2011"
+    },
+    "story": {
+      "title": "Ons Verhaal",
+      "p1": "Lucris Handyman is in 2011 opgericht met één eenvoudige missie: betrouwbare, hoogwaardige klusdiensten leveren tegen eerlijke prijzen. Wat begon als een eenmanszaak is uitgegroeid tot een vertrouwd team van vakmensen in de gemeenschap.",
+      "p2": "In de loop der jaren hebben we duizenden projecten afgerond, van kleine reparaties tot complete renovaties. Onze reputatie voor kwaliteit en uitstekende service heeft ons de vaste klusdienst in de regio gemaakt.",
+      "p3": "Vandaag houden we vast aan dezelfde waarden als vanaf het begin: integriteit, kwaliteit en klanttevredenheid. Ieder teamlid zet zich in om uw verwachtingen te overtreffen.",
+      "imageAlt": "Werkzaamheden aan woningrenovatie"
+    },
+    "stats": {
+      "years": "Jaren actief",
+      "clients": "Tevreden klanten",
+      "projects": "Projecten afgerond",
+      "satisfaction": "Klanttevredenheid"
+    },
+    "values": {
+      "title": "Onze waarden",
+      "subtitle": "Deze kernprincipes sturen alles wat we doen",
+      "quality": {
+        "title": "Kwaliteit voorop",
+        "description": "We doen nooit concessies aan de kwaliteit van ons werk. Elke klus wordt in één keer goed uitgevoerd."
+      },
+      "excellence": {
+        "title": "Professionele excellentie",
+        "description": "Ons team bestaat uit bekwame, gecertificeerde vakmensen met jaren ervaring."
+      },
+      "customer": {
+        "title": "Klantgericht",
+        "description": "Uw tevredenheid staat centraal. We luisteren naar uw wensen en leveren resultaat."
+      },
+      "reliable": {
+        "title": "Betrouwbare service",
+        "description": "We zijn op tijd, altijd. U kunt op ons rekenen wanneer u ons nodig heeft."
+      }
+    },
+    "team": {
+      "title": "Maak kennis met ons team",
+      "subtitle": "Vakkundige professionals die zorgen voor uw woning",
+      "members": {
+        "john": {
+          "name": "John Mitchell",
+          "role": "Oprichter & Lead Handyman",
+          "description": "Meer dan 15 jaar ervaring in alle aspecten van woningreparatie en onderhoud."
+        },
+        "david": {
+          "name": "David Chen",
+          "role": "Hoofdelektricien",
+          "description": "Gediplomeerd elektricien gespecialiseerd in residentiële installaties."
+        },
+        "robert": {
+          "name": "Robert Garcia",
+          "role": "Hoofdloodgieter",
+          "description": "Expert-loodgieter met uitgebreide ervaring in reparaties en installaties."
+        }
+      }
+    },
+    "certifications": {
+      "title": "Gelicentieerd & verzekerd",
+      "subtitle": "Wij beschikken over alle benodigde licenties en verzekeringen voor uw bescherming en gemoedsrust",
+      "items": [
+        "Gelicentieerde aannemer",
+        "Volledig verzekerd & gebonden",
+        "BBB-geaccrediteerd bedrijf",
+        "Master Electrician-licentie",
+        "Master Plumber-licentie",
+        "OSHA-veiligheidscertificering"
+      ]
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact",
+      "subtitle": "Neem contact op voor een gratis offerte of om een dienst in te plannen"
+    },
+    "info": {
+      "title": "Neem contact op",
+      "subtitle": "Heb je een vraag of wil je starten met je project? We horen graag van je. Neem contact op via een van onderstaande manieren.",
+      "phone": "Telefoon",
+      "phoneHours": "Ma-Za: 08:00-18:00",
+      "email": "E-mail",
+      "emailNote": "We reageren binnen 24 uur",
+      "address": "Adres",
+      "addressLine1": "123 Main Street",
+      "addressLine2": "New York, NY 10001",
+      "hours": "Openingstijden",
+      "hoursLine1": "Maandag - Vrijdag: 08:00 - 18:00",
+      "hoursLine2": "Zaterdag: 09:00 - 16:00",
+      "hoursLine3": "Zondag: Gesloten"
+    },
+    "emergency": {
+      "title": "Spoedservice",
+      "subtitle": "Voor urgente reparaties buiten openingstijden, bel onze spoedlijn:"
+    },
+    "form": {
+      "title": "Vraag een gratis offerte aan",
+      "successTitle": "Bedankt!",
+      "successMessage": "Je bericht is ontvangen. We nemen binnen 24 uur contact met je op.",
+      "fullName": "Volledige naam",
+      "fullNamePlaceholder": "Jan Jansen",
+      "phone": "Telefoonnummer",
+      "phonePlaceholder": "(555) 123-4567",
+      "email": "E-mailadres",
+      "emailPlaceholder": "jan@example.com",
+      "service": "Benodigde dienst",
+      "servicePlaceholder": "Selecteer een dienst",
+      "details": "Projectdetails",
+      "detailsPlaceholder": "Beschrijf je project in detail...",
+      "submit": "Bericht verzenden",
+      "disclaimer": "Door dit formulier te verzenden, ga je akkoord met onze voorwaarden en privacybeleid."
+    },
+    "services": {
+      "generalRepair": "Algemene reparatie",
+      "plumbing": "Loodgieterswerk",
+      "electrical": "Elektrisch",
+      "painting": "Schilderwerk",
+      "carpentry": "Timmerwerk",
+      "homeMaintenance": "Woningonderhoud",
+      "other": "Overig"
+    },
+    "map": {
+      "title": "Onze locatie",
+      "placeholder": "Hier wordt een kaart weergegeven (bijv. Google Maps-integratie)"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Uw vertrouwde",
+      "titleHighlight": "klusservice",
+      "subtitle": "Professionele diensten voor woningreparatie en onderhoud. Van kleine fixes tot grote renovaties — wij doen het met kwaliteit en zorg.",
+      "ctaPrimary": "Gratis offerte",
+      "ctaSecondary": "Bel nu",
+      "imageAlt": "Professionele klusser aan het werk"
+    },
+    "features": {
+      "licensed": "Gelicentieerd & verzekerd",
+      "sameDay": "Service op dezelfde dag",
+      "quality": "Vakmanschap van kwaliteit",
+      "affordable": "Betaalbare prijzen",
+      "satisfaction": "100% tevredenheidsgarantie",
+      "emergency": "Spoedservice beschikbaar"
+    },
+    "services": {
+      "title": "Onze diensten",
+      "subtitle": "We bieden een complete reeks klusdiensten om uw woning in topconditie te houden.",
+      "learnMore": "Meer info",
+      "viewAll": "Bekijk alle diensten",
+      "items": {
+        "plumbing": {
+          "title": "Loodgieterswerk",
+          "description": "Van lekkende kranen tot leidingreparaties — wij lossen het op."
+        },
+        "electrical": {
+          "title": "Elektrisch",
+          "description": "Veilige en betrouwbare elektrische installaties, reparaties en upgrades."
+        },
+        "painting": {
+          "title": "Schilderwerk",
+          "description": "Professioneel schilderwerk voor binnen en buiten."
+        }
+      }
+    },
+    "about": {
+      "title": "Waarom Lucris Handyman?",
+      "subtitle": "Met meer dan 15 jaar ervaring zijn we de meest vertrouwde klusservice in de regio. Ons team levert uitzonderlijke kwaliteit en klanttevredenheid.",
+      "learnMore": "Meer over ons",
+      "imageAlt": "Gereedschap van de klusser",
+      "points": {
+        "experienced": {
+          "title": "Ervaren vakmensen",
+          "text": "Vakkundige professionals met jaren expertise"
+        },
+        "pricing": {
+          "title": "Eerlijke & transparante prijzen",
+          "text": "Geen verborgen kosten, duidelijke offertes"
+        },
+        "guarantee": {
+          "title": "Kwaliteit gegarandeerd",
+          "text": "100% tevreden of geld terug"
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Wat onze klanten zeggen",
+      "subtitle": "Geloof ons niet op ons woord — hoor het van onze klanten",
+      "items": {
+        "sarah": {
+          "name": "Sarah Johnson",
+          "text": "Uitstekende service! Ze hebben ons loodgietersprobleem snel en professioneel opgelost. Aanrader!"
+        },
+        "mike": {
+          "name": "Mike Thompson",
+          "text": "Lucris is mijn vaste adres voor klussen. Altijd betrouwbaar, eerlijke prijzen en uitstekend werk."
+        },
+        "emily": {
+          "name": "Emily Davis",
+          "text": "Ze hebben onze badkamer gerenoveerd en het resultaat overtrof onze verwachtingen. Echte professionals!"
+        }
+      }
+    },
+    "cta": {
+      "title": "Klaar om te starten?",
+      "subtitle": "Neem vandaag nog contact op voor een gratis offerte en laat ons uw woningklussen verzorgen!",
+      "primary": "Gratis offerte",
+      "secondary": "Bel nu"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Onze diensten",
+      "subtitle": "Van kleine reparaties tot grote renovaties: wij bieden uitgebreide klusdiensten voor al uw woningverbetering."
+    },
+    "list": {
+      "plumbing": {
+        "title": "Loodgieterswerk",
+        "description": "Vakkundige reparaties en installaties voor uw sanitair.",
+        "items": [
+          "Kraan- & armatuurreparaties",
+          "Toiletreparaties & vervanging",
+          "Leidingreparaties & lekdetectie",
+          "Afvoer reinigen",
+          "Boiler- en warmwaterservices",
+          "Plaatsing van afvalvermaler"
+        ]
+      },
+      "electrical": {
+        "title": "Elektrisch werk",
+        "description": "Veilige en betrouwbare elektrische diensten door gecertificeerde professionals.",
+        "items": [
+          "Installatie van lichtarmaturen",
+          "Reparatie van stopcontacten & schakelaars",
+          "Plafondventilator installatie",
+          "Groepenkast & zekeringservices",
+          "Herverdading van de woning",
+          "Elektrische veiligheidsinspecties"
+        ]
+      },
+      "painting": {
+        "title": "Schilder- & stucwerk",
+        "description": "Geef uw ruimte een nieuwe look met professioneel schilderwerk.",
+        "items": [
+          "Binnen schilderwerk",
+          "Buiten schilderwerk",
+          "Gipsplaat installatie",
+          "Gipsplaat reparatie",
+          "Structuur bijwerken",
+          "Behang verwijderen"
+        ]
+      },
+      "carpentry": {
+        "title": "Timmerwerk",
+        "description": "Maatwerk timmerwerk voor al uw houtwerkprojecten.",
+        "items": [
+          "Maatwerk planken",
+          "Keukenkast installatie",
+          "Deur installatie & reparatie",
+          "Sierlijsten",
+          "Dekreparaties",
+          "Plinten & afwerking"
+        ]
+      },
+      "repairs": {
+        "title": "Woningreparaties",
+        "description": "Algemene reparaties om uw woning in topconditie te houden.",
+        "items": [
+          "Raamreparaties",
+          "Deurreparaties",
+          "Sloten plaatsen",
+          "Tochtstrips",
+          "Afdichten & kitten",
+          "Kleine dakreparaties"
+        ]
+      },
+      "maintenance": {
+        "title": "Onderhoudsdiensten",
+        "description": "Regelmatig onderhoud om toekomstige problemen te voorkomen.",
+        "items": [
+          "Seizoensinspecties",
+          "Dakgootreiniging",
+          "Hogedrukreiniging",
+          "HVAC-filter vervangen",
+          "Preventief onderhoud",
+          "Woningveiligheidschecks"
+        ]
+      }
+    },
+    "process": {
+      "title": "Hoe het werkt",
+      "subtitle": "Uw klus is zo geregeld met ons eenvoudige proces",
+      "items": [
+        {
+          "title": "Neem contact op",
+          "description": "Bel of vul ons online formulier in om uw project te beschrijven"
+        },
+        {
+          "title": "Ontvang een offerte",
+          "description": "Krijg een eerlijke en transparante prijsopgave"
+        },
+        {
+          "title": "Plan de service",
+          "description": "Kies een moment dat u het beste uitkomt"
+        },
+        {
+          "title": "Klus afgerond",
+          "description": "We voeren het werk uit met kwaliteit en zorg"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Een klusser nodig?",
+      "subtitle": "Neem vandaag nog contact op voor een gratis offerte voor onze diensten!",
+      "button": "Offerte aanvragen"
+    }
+  },
+  "gallery": {
+    "hero": {
+      "title": "Projectgalerij",
+      "subtitle": "Bekijk ons portfolio van afgeronde projecten en zie de kwaliteit van ons werk"
+    },
+    "categories": {
+      "all": "Alle",
+      "plumbing": "Loodgieterswerk",
+      "electrical": "Elektrisch",
+      "painting": "Schilderwerk",
+      "carpentry": "Timmerwerk",
+      "renovation": "Renovatie"
+    },
+    "projects": {
+      "kitchen": {
+        "title": "Keukenrenovatie",
+        "description": "Volledige keukenrenovatie met maatwerk kasten en nieuwe armaturen"
+      },
+      "plumbing": {
+        "title": "Loodgietersreparatie",
+        "description": "Professionele leidingreparatie en installatie van armaturen"
+      },
+      "electrical": {
+        "title": "Elektrische installatie",
+        "description": "Veilig en betrouwbaar elektrisch werk met juiste certificering"
+      },
+      "painting": {
+        "title": "Binnenschilderwerk",
+        "description": "Professioneel binnenschilderwerk met oog voor detail"
+      },
+      "carpentry": {
+        "title": "Maatwerk timmerwerk",
+        "description": "Maatwerk hout- en timmerprojecten"
+      },
+      "maintenance": {
+        "title": "Woningonderhoud",
+        "description": "Regelmatig woningonderhoud en reparatiediensten"
+      }
+    },
+    "empty": "Geen projecten gevonden in deze categorie."
+  }
+}

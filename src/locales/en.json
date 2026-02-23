@@ -1,0 +1,399 @@
+{
+  "header": {
+    "brand": "Lucris Handyman",
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "about": "About Us",
+      "gallery": "Gallery",
+      "contact": "Contact"
+    },
+    "cta": "Get a Quote",
+    "language": "Language"
+  },
+  "footer": {
+    "brand": "Lucris Handyman",
+    "description": "Professional handyman services for all your home repair and maintenance needs. Quality work, affordable prices.",
+    "quickLinks": "Quick Links",
+    "links": {
+      "home": "Home",
+      "services": "Services",
+      "about": "About Us",
+      "gallery": "Gallery",
+      "contact": "Contact"
+    },
+    "ourServices": "Our Services",
+    "services": {
+      "plumbing": "Plumbing Repairs",
+      "electrical": "Electrical Work",
+      "painting": "Painting & Drywall",
+      "carpentry": "Carpentry",
+      "general": "General Repairs",
+      "maintenance": "Home Maintenance"
+    },
+    "contactInfo": "Contact Info",
+    "callUs": "Call Us",
+    "emailUs": "Email Us",
+    "location": "Location",
+    "hours": "Working Hours",
+    "hoursValue": "Mon-Sat: 8AM-6PM",
+    "copyright": "© 2026 Lucris Handyman. All rights reserved."
+  },
+  "about": {
+    "hero": {
+      "title": "About Lucris Handyman",
+      "subtitle": "Your trusted partner for all home repair and maintenance needs since 2011"
+    },
+    "story": {
+      "title": "Our Story",
+      "p1": "Lucris Handyman was founded in 2011 with a simple mission: to provide reliable, high-quality handyman services at fair prices. What started as a one-person operation has grown into a trusted team of skilled professionals serving the community.",
+      "p2": "Over the years, we've completed thousands of projects, from simple repairs to complete home renovations. Our reputation for quality work and excellent customer service has made us the go-to handyman service in the area.",
+      "p3": "Today, we continue to uphold the same values that guided us from the beginning: integrity, quality, and customer satisfaction. Every member of our team is dedicated to exceeding your expectations.",
+      "imageAlt": "Home renovation work"
+    },
+    "stats": {
+      "years": "Years in Business",
+      "clients": "Happy Clients",
+      "projects": "Projects Completed",
+      "satisfaction": "Customer Satisfaction"
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "These core principles guide everything we do",
+      "quality": {
+        "title": "Quality First",
+        "description": "We never compromise on the quality of our work. Every job is done right the first time."
+      },
+      "excellence": {
+        "title": "Professional Excellence",
+        "description": "Our team consists of skilled, licensed professionals with years of experience."
+      },
+      "customer": {
+        "title": "Customer Focus",
+        "description": "Your satisfaction is our priority. We listen to your needs and deliver results."
+      },
+      "reliable": {
+        "title": "Reliable Service",
+        "description": "We show up on time, every time. Count on us to be there when you need us."
+      }
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "subtitle": "Skilled professionals dedicated to your home's care",
+      "members": {
+        "john": {
+          "name": "John Mitchell",
+          "role": "Founder & Lead Handyman",
+          "description": "15+ years of experience in all aspects of home repair and maintenance."
+        },
+        "david": {
+          "name": "David Chen",
+          "role": "Master Electrician",
+          "description": "Licensed electrician specializing in residential electrical work."
+        },
+        "robert": {
+          "name": "Robert Garcia",
+          "role": "Master Plumber",
+          "description": "Expert plumber with extensive experience in repairs and installations."
+        }
+      }
+    },
+    "certifications": {
+      "title": "Licensed & Insured",
+      "subtitle": "We maintain all necessary licenses and insurance for your protection and peace of mind",
+      "items": [
+        "State Licensed Contractor",
+        "Fully Insured & Bonded",
+        "BBB Accredited Business",
+        "Master Electrician License",
+        "Master Plumber License",
+        "OSHA Safety Certified"
+      ]
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "Get in touch with us for a free quote or to schedule a service"
+    },
+    "info": {
+      "title": "Get in Touch",
+      "subtitle": "Have a question or ready to start your project? We'd love to hear from you. Reach out using any of the methods below.",
+      "phone": "Phone",
+      "phoneHours": "Mon-Sat: 8AM-6PM",
+      "email": "Email",
+      "emailNote": "We'll respond within 24 hours",
+      "address": "Address",
+      "addressLine1": "123 Main Street",
+      "addressLine2": "New York, NY 10001",
+      "hours": "Business Hours",
+      "hoursLine1": "Monday - Friday: 8:00 AM - 6:00 PM",
+      "hoursLine2": "Saturday: 9:00 AM - 4:00 PM",
+      "hoursLine3": "Sunday: Closed"
+    },
+    "emergency": {
+      "title": "Emergency Services",
+      "subtitle": "For urgent repairs outside business hours, call our emergency line:"
+    },
+    "form": {
+      "title": "Request a Free Quote",
+      "successTitle": "Thank You!",
+      "successMessage": "Your message has been received. We'll get back to you within 24 hours.",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "John Doe",
+      "phone": "Phone Number",
+      "phonePlaceholder": "(555) 123-4567",
+      "email": "Email Address",
+      "emailPlaceholder": "john@example.com",
+      "service": "Service Needed",
+      "servicePlaceholder": "Select a service",
+      "details": "Project Details",
+      "detailsPlaceholder": "Please describe your project in detail...",
+      "submit": "Send Message",
+      "disclaimer": "By submitting this form, you agree to our terms and privacy policy."
+    },
+    "services": {
+      "generalRepair": "General Repair",
+      "plumbing": "Plumbing",
+      "electrical": "Electrical",
+      "painting": "Painting",
+      "carpentry": "Carpentry",
+      "homeMaintenance": "Home Maintenance",
+      "other": "Other"
+    },
+    "map": {
+      "title": "Our Location",
+      "placeholder": "Map would be displayed here (e.g., Google Maps integration)"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Your Trusted",
+      "titleHighlight": "Handyman Service",
+      "subtitle": "Professional home repair and maintenance services. From small fixes to major renovations, we do it all with quality and care.",
+      "ctaPrimary": "Get Free Quote",
+      "ctaSecondary": "Call Now",
+      "imageAlt": "Professional handyman at work"
+    },
+    "features": {
+      "licensed": "Licensed & Insured",
+      "sameDay": "Same-Day Service",
+      "quality": "Quality Workmanship",
+      "affordable": "Affordable Pricing",
+      "satisfaction": "100% Satisfaction Guarantee",
+      "emergency": "Emergency Services Available"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "We offer a comprehensive range of handyman services to keep your home in perfect condition.",
+      "learnMore": "Learn More",
+      "viewAll": "View All Services",
+      "items": {
+        "plumbing": {
+          "title": "Plumbing",
+          "description": "From leaky faucets to pipe repairs, we handle all your plumbing needs."
+        },
+        "electrical": {
+          "title": "Electrical",
+          "description": "Safe and reliable electrical installations, repairs, and upgrades."
+        },
+        "painting": {
+          "title": "Painting",
+          "description": "Professional painting services for interior and exterior projects."
+        }
+      }
+    },
+    "about": {
+      "title": "Why Choose Lucris Handyman?",
+      "subtitle": "With over 15 years of experience, we've become the most trusted handyman service in the area. Our team of skilled professionals is committed to delivering exceptional quality and customer satisfaction.",
+      "learnMore": "Learn More About Us",
+      "imageAlt": "Handyman tools",
+      "points": {
+        "experienced": {
+          "title": "Experienced Professionals",
+          "text": "Skilled craftsmen with years of expertise"
+        },
+        "pricing": {
+          "title": "Fair & Transparent Pricing",
+          "text": "No hidden fees, upfront quotes"
+        },
+        "guarantee": {
+          "title": "Quality Guaranteed",
+          "text": "100% satisfaction or your money back"
+        }
+      }
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Don't just take our word for it - hear from our satisfied customers",
+      "items": {
+        "sarah": {
+          "name": "Sarah Johnson",
+          "text": "Outstanding service! They fixed our plumbing issue quickly and professionally. Highly recommend!"
+        },
+        "mike": {
+          "name": "Mike Thompson",
+          "text": "Lucris is my go-to for all home repairs. Always reliable, fair pricing, and excellent work."
+        },
+        "emily": {
+          "name": "Emily Davis",
+          "text": "They remodeled our bathroom and the results exceeded our expectations. True professionals!"
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Contact us today for a free quote and let us take care of your home repair needs!",
+      "primary": "Get Free Quote",
+      "secondary": "Call Now"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "From minor repairs to major renovations, we offer comprehensive handyman services to meet all your home improvement needs."
+    },
+    "list": {
+      "plumbing": {
+        "title": "Plumbing Services",
+        "description": "Expert plumbing repairs and installations for your home.",
+        "items": [
+          "Faucet & Fixture Repairs",
+          "Toilet Repairs & Replacement",
+          "Pipe Repairs & Leak Detection",
+          "Drain Cleaning",
+          "Water Heater Services",
+          "Garbage Disposal Installation"
+        ]
+      },
+      "electrical": {
+        "title": "Electrical Work",
+        "description": "Safe and reliable electrical services by licensed professionals.",
+        "items": [
+          "Light Fixture Installation",
+          "Outlet & Switch Repair",
+          "Ceiling Fan Installation",
+          "Circuit Breaker Services",
+          "Home Rewiring",
+          "Electrical Safety Inspections"
+        ]
+      },
+      "painting": {
+        "title": "Painting & Drywall",
+        "description": "Transform your space with professional painting services.",
+        "items": [
+          "Interior Painting",
+          "Exterior Painting",
+          "Drywall Installation",
+          "Drywall Repair",
+          "Texture Matching",
+          "Wallpaper Removal"
+        ]
+      },
+      "carpentry": {
+        "title": "Carpentry",
+        "description": "Custom carpentry work for all your woodworking needs.",
+        "items": [
+          "Custom Shelving",
+          "Cabinet Installation",
+          "Door Installation & Repair",
+          "Crown Molding",
+          "Deck Repairs",
+          "Trim & Baseboards"
+        ]
+      },
+      "repairs": {
+        "title": "Home Repairs",
+        "description": "General home repairs to keep your property in top shape.",
+        "items": [
+          "Window Repairs",
+          "Door Repairs",
+          "Lock Installation",
+          "Weather Stripping",
+          "Caulking & Sealing",
+          "Minor Roof Repairs"
+        ]
+      },
+      "maintenance": {
+        "title": "Maintenance Services",
+        "description": "Regular maintenance to prevent future problems.",
+        "items": [
+          "Seasonal Home Inspections",
+          "Gutter Cleaning",
+          "Pressure Washing",
+          "HVAC Filter Changes",
+          "Preventive Maintenance",
+          "Home Safety Checks"
+        ]
+      }
+    },
+    "process": {
+      "title": "How It Works",
+      "subtitle": "Getting your home repairs done is easy with our simple process",
+      "items": [
+        {
+          "title": "Contact Us",
+          "description": "Call or fill out our online form to describe your project"
+        },
+        {
+          "title": "Get a Quote",
+          "description": "Receive a fair, transparent estimate for the work"
+        },
+        {
+          "title": "Schedule Service",
+          "description": "Choose a convenient time that works for you"
+        },
+        {
+          "title": "Job Complete",
+          "description": "We complete the work with quality and care"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Need a Handyman?",
+      "subtitle": "Contact us today for a free estimate on any of our services!",
+      "button": "Request a Quote"
+    }
+  },
+  "gallery": {
+    "hero": {
+      "title": "Project Gallery",
+      "subtitle": "Browse through our portfolio of completed projects and see the quality of our work"
+    },
+    "categories": {
+      "all": "All",
+      "plumbing": "Plumbing",
+      "electrical": "Electrical",
+      "painting": "Painting",
+      "carpentry": "Carpentry",
+      "renovation": "Renovation"
+    },
+    "projects": {
+      "kitchen": {
+        "title": "Kitchen Renovation",
+        "description": "Complete kitchen remodel with custom cabinets and new fixtures"
+      },
+      "plumbing": {
+        "title": "Plumbing Repair",
+        "description": "Professional pipe repair and fixture installation"
+      },
+      "electrical": {
+        "title": "Electrical Installation",
+        "description": "Safe and reliable electrical work with proper certification"
+      },
+      "painting": {
+        "title": "Interior Painting",
+        "description": "Professional interior painting with attention to detail"
+      },
+      "carpentry": {
+        "title": "Custom Carpentry",
+        "description": "Custom woodworking and carpentry projects"
+      },
+      "maintenance": {
+        "title": "Home Maintenance",
+        "description": "Regular home maintenance and repair services"
+      }
+    },
+    "empty": "No projects found in this category."
+  }
+}

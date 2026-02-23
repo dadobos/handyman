@@ -1,49 +1,55 @@
 import { Link } from "react-router";
 import { CheckCircle, Phone, ArrowRight, Star } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { useTranslation } from "react-i18next";
 
 export function Home() {
+  const { t } = useTranslation();
+
   const services = [
     {
-      title: "Plumbing",
-      description: "From leaky faucets to pipe repairs, we handle all your plumbing needs.",
-      image: "https://images.unsplash.com/photo-1760571327612-8ab776dcd462?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob21lJTIwcmVwYWlyJTIwcGx1bWJpbmd8ZW58MXx8fHwxNzcxNTE2ODQ2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      title: t("home.services.items.plumbing.title"),
+      description: t("home.services.items.plumbing.description"),
+      image:
+        "https://images.unsplash.com/photo-1760571327612-8ab776dcd462?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob21lJTIwcmVwYWlyJTIwcGx1bWJpbmd8ZW58MXx8fHwxNzcxNTE2ODQ2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
     {
-      title: "Electrical",
-      description: "Safe and reliable electrical installations, repairs, and upgrades.",
-      image: "https://images.unsplash.com/photo-1767514536570-83d70c024247?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVjdHJpY2FsJTIwd29yayUyMGluc3RhbGxhdGlvbnxlbnwxfHx8fDE3NzE1OTg3OTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      title: t("home.services.items.electrical.title"),
+      description: t("home.services.items.electrical.description"),
+      image:
+        "https://images.unsplash.com/photo-1767514536570-83d70c024247?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVjdHJpY2FsJTIwd29yayUyMGluc3RhbGxhdGlvbnxlbnwxfHx8fDE3NzE1OTg3OTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
     {
-      title: "Painting",
-      description: "Professional painting services for interior and exterior projects.",
-      image: "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3VzZSUyMHBhaW50aW5nJTIwY29udHJhY3RvcnxlbnwxfHx8fDE3NzE1OTg3OTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      title: t("home.services.items.painting.title"),
+      description: t("home.services.items.painting.description"),
+      image:
+        "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3VzZSUyMHBhaW50aW5nJTIwY29udHJhY3RvcnxlbnwxfHx8fDE3NzE1OTg3OTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
   ];
 
   const features = [
-    "Licensed & Insured",
-    "Same-Day Service",
-    "Quality Workmanship",
-    "Affordable Pricing",
-    "100% Satisfaction Guarantee",
-    "Emergency Services Available",
+    t("home.features.licensed"),
+    t("home.features.sameDay"),
+    t("home.features.quality"),
+    t("home.features.affordable"),
+    t("home.features.satisfaction"),
+    t("home.features.emergency"),
   ];
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      text: "Outstanding service! They fixed our plumbing issue quickly and professionally. Highly recommend!",
+      name: t("home.testimonials.items.sarah.name"),
+      text: t("home.testimonials.items.sarah.text"),
       rating: 5,
     },
     {
-      name: "Mike Thompson",
-      text: "Lucris is my go-to for all home repairs. Always reliable, fair pricing, and excellent work.",
+      name: t("home.testimonials.items.mike.name"),
+      text: t("home.testimonials.items.mike.text"),
       rating: 5,
     },
     {
-      name: "Emily Davis",
-      text: "They remodeled our bathroom and the results exceeded our expectations. True professionals!",
+      name: t("home.testimonials.items.emily.name"),
+      text: t("home.testimonials.items.emily.text"),
       rating: 5,
     },
   ];
@@ -56,17 +62,18 @@ export function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-900">
-                Your Trusted <span className="text-orange-600">Handyman</span> Service
+                {t("home.hero.title")}
+                <span className="text-orange-600"> {t("home.hero.titleHighlight")}</span>
               </h1>
               <p className="text-xl text-gray-700 mb-8">
-                Professional home repair and maintenance services. From small fixes to major renovations, we do it all with quality and care.
+                {t("home.hero.subtitle")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
                   className="inline-flex items-center justify-center bg-orange-600 text-white px-8 py-4 rounded-lg hover:bg-orange-700 transition-colors"
                 >
-                  Get Free Quote
+                  {t("home.hero.ctaPrimary")}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
                 <a
@@ -74,14 +81,14 @@ export function Home() {
                   className="inline-flex items-center justify-center bg-white text-orange-600 px-8 py-4 rounded-lg border-2 border-orange-600 hover:bg-orange-50 transition-colors"
                 >
                   <Phone className="mr-2 h-5 w-5" />
-                  (555) 123-4567
+                  {t("home.hero.ctaSecondary")}
                 </a>
               </div>
             </div>
             <div className="relative">
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1620838883342-ca19cf8448d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoYW5keW1hbiUyMHNlcnZpY2V8ZW58MXx8fHwxNzcxNTk4Nzk4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Professional handyman at work"
+                alt={t("home.hero.imageAlt")}
                 className="rounded-lg shadow-2xl w-full"
               />
             </div>
@@ -107,14 +114,19 @@ export function Home() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900">Our Services</h2>
+            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900">
+              {t("home.services.title")}
+            </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We offer a comprehensive range of handyman services to keep your home in perfect condition.
+              {t("home.services.subtitle")}
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <div
+                key={index}
+                className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+              >
                 <ImageWithFallback
                   src={service.image}
                   alt={service.title}
@@ -127,7 +139,7 @@ export function Home() {
                     to="/services"
                     className="inline-flex items-center text-orange-600 hover:text-orange-700"
                   >
-                    Learn More
+                    {t("home.services.learnMore")}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </div>
@@ -139,7 +151,7 @@ export function Home() {
               to="/services"
               className="inline-flex items-center bg-orange-600 text-white px-8 py-3 rounded-lg hover:bg-orange-700 transition-colors"
             >
-              View All Services
+              {t("home.services.viewAll")}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>
@@ -152,36 +164,48 @@ export function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <ImageWithFallback
               src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYW5keW1hbiUyMGNhcnBlbnRlciUyMHRvb2xzfGVufDF8fHx8MTc3MTU5ODc5N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-              alt="Handyman tools"
+              alt={t("home.about.imageAlt")}
               className="rounded-lg shadow-lg w-full"
             />
             <div>
               <h2 className="text-3xl md:text-4xl mb-6 text-gray-900">
-                Why Choose Lucris Handyman?
+                {t("home.about.title")}
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                With over 15 years of experience, we've become the most trusted handyman service in the area. Our team of skilled professionals is committed to delivering exceptional quality and customer satisfaction.
+                {t("home.about.subtitle")}
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-orange-600 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="text-gray-900">Experienced Professionals</span>
-                    <p className="text-gray-600">Skilled craftsmen with years of expertise</p>
+                    <span className="text-gray-900">
+                      {t("home.about.points.experienced.title")}
+                    </span>
+                    <p className="text-gray-600">
+                      {t("home.about.points.experienced.text")}
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-orange-600 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="text-gray-900">Fair & Transparent Pricing</span>
-                    <p className="text-gray-600">No hidden fees, upfront quotes</p>
+                    <span className="text-gray-900">
+                      {t("home.about.points.pricing.title")}
+                    </span>
+                    <p className="text-gray-600">
+                      {t("home.about.points.pricing.text")}
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-orange-600 flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="text-gray-900">Quality Guaranteed</span>
-                    <p className="text-gray-600">100% satisfaction or your money back</p>
+                    <span className="text-gray-900">
+                      {t("home.about.points.guarantee.title")}
+                    </span>
+                    <p className="text-gray-600">
+                      {t("home.about.points.guarantee.text")}
+                    </p>
                   </div>
                 </li>
               </ul>
@@ -189,7 +213,7 @@ export function Home() {
                 to="/about"
                 className="inline-flex items-center text-orange-600 hover:text-orange-700 text-lg"
               >
-                Learn More About Us
+                {t("home.about.learnMore")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </div>
@@ -201,9 +225,11 @@ export function Home() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900">What Our Clients Say</h2>
+            <h2 className="text-3xl md:text-4xl mb-4 text-gray-900">
+              {t("home.testimonials.title")}
+            </h2>
             <p className="text-xl text-gray-600">
-              Don't just take our word for it - hear from our satisfied customers
+              {t("home.testimonials.subtitle")}
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -226,17 +252,17 @@ export function Home() {
       <section className="py-16 bg-orange-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl mb-6 text-white">
-            Ready to Get Started?
+            {t("home.cta.title")}
           </h2>
           <p className="text-xl text-orange-100 mb-8">
-            Contact us today for a free quote and let us take care of your home repair needs!
+            {t("home.cta.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
               className="inline-flex items-center justify-center bg-white text-orange-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors"
             >
-              Get Free Quote
+              {t("home.cta.primary")}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <a
@@ -244,7 +270,7 @@ export function Home() {
               className="inline-flex items-center justify-center bg-orange-700 text-white px-8 py-4 rounded-lg hover:bg-orange-800 transition-colors"
             >
               <Phone className="mr-2 h-5 w-5" />
-              Call Now
+              {t("home.cta.secondary")}
             </a>
           </div>
         </div>
