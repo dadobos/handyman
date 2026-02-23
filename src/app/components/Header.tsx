@@ -23,7 +23,7 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <Wrench className="h-8 w-8 text-orange-600" />
-            <span className="font-bold text-xl text-gray-900">ProFix Handyman</span>
+            <span className="font-bold text-xl text-gray-900">Lucris Handyman</span>
           </Link>
 
           {/* Desktop Navigation */}

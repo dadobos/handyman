@@ -38,7 +38,7 @@ export function Home() {
     },
     {
       name: "Mike Thompson",
-      text: "ProFix is my go-to for all home repairs. Always reliable, fair pricing, and excellent work.",
+      text: "Lucris is my go-to for all home repairs. Always reliable, fair pricing, and excellent work.",
       rating: 5,
     },
     {
@@ -157,7 +157,7 @@ export function Home() {
             />
             <div>
               <h2 className="text-3xl md:text-4xl mb-6 text-gray-900">
-                Why Choose ProFix Handyman?
+                Why Choose Lucris Handyman?
               </h2>
               <p className="text-lg text-gray-600 mb-6">
                 With over 15 years of experience, we've become the most trusted handyman service in the area. Our team of skilled professionals is committed to delivering exceptional quality and customer satisfaction.

@@ -93,8 +93,8 @@ export function Contact() {
                   </div>
                   <div>
                     <h3 className="text-gray-900 mb-1">Email</h3>
-                    <a href="mailto:info@profix.com" className="text-orange-600 hover:text-orange-700">
-                      info@profix.com
+                    <a href="mailto:info@lucris.nl" className="text-orange-600 hover:text-orange-700">
+                      info@lucris.nl
                     </a>
                     <p className="text-gray-600 text-sm mt-1">We'll respond within 24 hours</p>
                   </div>

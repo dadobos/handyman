@@ -37,7 +37,7 @@ export function About() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-orange-50 to-orange-100 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl mb-6 text-gray-900">About ProFix Handyman</h1>
+          <h1 className="text-4xl md:text-5xl mb-6 text-gray-900">About Lucris Handyman</h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Your trusted partner for all home repair and maintenance needs since 2011
           </p>
@@ -51,7 +51,7 @@ export function About() {
             <div>
               <h2 className="text-3xl md:text-4xl mb-6 text-gray-900">Our Story</h2>
               <p className="text-lg text-gray-700 mb-4">
-                ProFix Handyman was founded in 2011 with a simple mission: to provide reliable, high-quality handyman services at fair prices. What started as a one-person operation has grown into a trusted team of skilled professionals serving the community.
+                Lucris Handyman was founded in 2011 with a simple mission: to provide reliable, high-quality handyman services at fair prices. What started as a one-person operation has grown into a trusted team of skilled professionals serving the community.
               </p>
               <p className="text-lg text-gray-700 mb-4">
                 Over the years, we've completed thousands of projects, from simple repairs to complete home renovations. Our reputation for quality work and excellent customer service has made us the go-to handyman service in the area.

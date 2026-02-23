@@ -10,7 +10,7 @@ export function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Wrench className="h-8 w-8 text-orange-600" />
-              <span className="font-bold text-xl text-white">ProFix Handyman</span>
+              <span className="font-bold text-xl text-white">Lucris Handyman</span>
             </div>
             <p className="text-sm mb-4">
               Professional handyman services for all your home repair and maintenance needs. Quality work, affordable prices.
@@ -88,7 +88,7 @@ export function Footer() {
                 <Mail className="h-5 w-5 text-orange-600 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-sm">Email Us</p>
-                  <p className="text-white">info@profix.com</p>
+                  <p className="text-white">info@lucris.nl</p>
                 </div>
               </li>
               <li className="flex items-start space-x-3">
@@ -110,7 +110,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-          <p>&copy; 2026 ProFix Handyman. All rights reserved.</p>
+          <p>&copy; 2026 Lucris Handyman. All rights reserved.</p>
         </div>
       </div>
     </footer>
